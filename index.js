@@ -10,3 +10,5 @@ const server = http.createServer((req,res) => {
     res.end("Hello World")
 
 })
+
+server.listen(port, hostname,() =>{ console.log("servidor rodando")})
