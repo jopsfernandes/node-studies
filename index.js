@@ -5,13 +5,14 @@ const port = 3000;
 
 const server = http.createServer((req,res) => {
 
+    if (req.url == '/jops'){
     fs.readFile('index.html', (err, data ) =>{
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.write(data);
         return res.end();
     })
 
-
+    }else{return res.end();}
 })
 
 server.listen(port, hostname,() =>{ console.log('servidor rodando')})
