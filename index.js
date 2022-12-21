@@ -1,3 +1,3 @@
-const jops = require("./jops.js")
+const Jops = require("./jops.js")
 
-jops.helloJops();
+new Jops();

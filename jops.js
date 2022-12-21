@@ -1,6 +1,13 @@
+class Jops{
+    constructor(){
+        this.nome = "o nome é jops"
+        this.testes();
+    }
 
-function helloJops(){
-    console.log("hello jops")
+
+     testes() {
+            console.log('this.nome')
+        }
 }
 
-exports.helloJops = helloJops;
+module.exports = Jops;
